@@ -3,31 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson3</title>
+    <title>Lesson4</title>
 </head>
 <body>
     <script>
         "use strickt";
-        let name = prompt("Enter your name");
-        let age = prompt("Enter your age");
-        let drink = confirm("Do you drink alcohol?");
-        
-        if (drink == true && age > 40) {
-            alert(name + "! Do not alcohol abuse!");
-        } 
-        
-        else if (drink == true && age < 18) {
-            alert(name + "! What are you ?! I'll tell my mom!");
-        } 
-        
-        else if (drink == true && age >= 18 && age <= 40) {
-            alert(name + "! Just don't mix vodka with beer.");
-        } 
-        
-        else if (drink == false) {
-            alert(name + "! Keep it up!");
+        let number = Number(prompt("Enter a number:"));
+        let x = "*";
+        let y = "";
+        for (let i=1; i <= number; i++) {
+            y += x;
+            console.log(y);
         }
-        
     </script>
 </body>
 </html>
