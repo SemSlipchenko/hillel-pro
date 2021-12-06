@@ -28,11 +28,9 @@
     let firstValue = prompt("enter first value");
     let secondValue = prompt("enter second value");
 
-    function average(a,b){
-        let result = (firstValue+secondValue)/(2);
-        alert(result);
+    function average(){
+        return ((Number(firstValue) + Number(secondValue)) / 2);
     }
-
-    average();
+    alert(average());
 </script>
 </html>
