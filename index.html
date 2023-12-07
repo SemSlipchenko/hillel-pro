@@ -35,28 +35,30 @@
 
     let firstValue = prompt("enter first value");
     let secondValue = prompt("enter second value");
-    let action = prompt("enter action");
-    let result="";
+    let action = prompt("enter action: - + / *");
+    let result = 0;
 
-    function calc(){     
-        if (action = "+") {
-            return Number.result = Number.firstValue + Number.secondValue;
-            alert(Number.result);
+    function calc(){ 
+        if (action === "+") {
+            result = Number(firstValue) + Number(secondValue);
+            return alert(result);
         } else
         if (action === '-') {
-            return result = firstValue - secondValue;
-            alert(result);
+            result = Number(firstValue) - Number(secondValue);
+            return alert(result);
         } else
         if (action === '*') {
-            return result = firstValue * secondValue;
-            alert(result);
+            result = Number(firstValue) * Number(secondValue);
+            return alert(result);
         } else
         if (action === '/') {
-            return result = firstValue / secondValue;
-            alert(result);
+            result = Number(firstValue) / Number(secondValue);
+            return alert(result);
+        } else {
+            return alert("incorrect operator!")
         }
     }
 
-    calc(firstValue,secondValue,action);
+    calc();
 </script>
 </html>
