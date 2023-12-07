@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson3</title>
+    <title>lesson5</title>
 </head>
 <body>
-    <h1>Lorem.</h1>
+    
 </body>
+<script>
+    "use strict";
+    // const p = 3.14;
+    // let radius = prompt("enter radius","");
+    // function cirleArea (){
+    //     let result = p * (radius*radius);
+    //     alert([result]);
+    // }
+    // cirleArea();
+
+    // function circlePerimeter (){
+    //     let result = 2 * p * radius;
+    //     alert([result]);
+    // }
+
+    // circlePerimeter();
+
+    // let firstValue = prompt("enter first value");
+    // let secondValue = prompt("enter second value");
+
+    // function average(){
+    //     return ((Number(firstValue) + Number(secondValue)) / 2);
+    // }
+    // alert(average());
+
+    let firstValue = prompt("enter first value");
+    let secondValue = prompt("enter second value");
+    let action = prompt("enter action: - + / *");
+    let result = 0;
+
+    function calc(){ 
+        if (action === "+") {
+            result = Number(firstValue) + Number(secondValue);
+            return alert(result);
+        } else
+        if (action === '-') {
+            result = Number(firstValue) - Number(secondValue);
+            return alert(result);
+        } else
+        if (action === '*') {
+            result = Number(firstValue) * Number(secondValue);
+            return alert(result);
+        } else
+        if (action === '/') {
+            result = Number(firstValue) / Number(secondValue);
+            return alert(result);
+        } else {
+            return alert("incorrect operator!")
+        }
+    }
+
+    calc();
+</script>
 </html>
