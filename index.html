@@ -25,12 +25,38 @@
 
     // circlePerimeter();
 
+    // let firstValue = prompt("enter first value");
+    // let secondValue = prompt("enter second value");
+
+    // function average(){
+    //     return ((Number(firstValue) + Number(secondValue)) / 2);
+    // }
+    // alert(average());
+
     let firstValue = prompt("enter first value");
     let secondValue = prompt("enter second value");
+    let action = prompt("enter action");
+    let result="";
 
-    function average(){
-        return ((Number(firstValue) + Number(secondValue)) / 2);
+    function calc(){     
+        if (action = "+") {
+            return Number.result = Number.firstValue + Number.secondValue;
+            alert(Number.result);
+        } else
+        if (action === '-') {
+            return result = firstValue - secondValue;
+            alert(result);
+        } else
+        if (action === '*') {
+            return result = firstValue * secondValue;
+            alert(result);
+        } else
+        if (action === '/') {
+            return result = firstValue / secondValue;
+            alert(result);
+        }
     }
-    alert(average());
+
+    calc(firstValue,secondValue,action);
 </script>
 </html>
