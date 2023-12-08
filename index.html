@@ -10,55 +10,11 @@
 </body>
 <script>
     "use strict";
-    // const p = 3.14;
-    // let radius = prompt("enter radius","");
-    // function cirleArea (){
-    //     let result = p * (radius*radius);
-    //     alert([result]);
-    // }
-    // cirleArea();
+    let students = [{name: "Arnold",gender: "male",age: 17},{name: "Anita",gender: "female",age: 18},
+    {name: "Olga",gender: "female",age: 25},{name: "Michael",gender: "male",age: 39},
+    {name: "Berta",gender: "female",age: 21}];
 
-    // function circlePerimeter (){
-    //     let result = 2 * p * radius;
-    //     alert([result]);
-    // }
-
-    // circlePerimeter();
-
-    // let firstValue = prompt("enter first value");
-    // let secondValue = prompt("enter second value");
-
-    // function average(){
-    //     return ((Number(firstValue) + Number(secondValue)) / 2);
-    // }
-    // alert(average());
-
-    let firstValue = prompt("enter first value");
-    let secondValue = prompt("enter second value");
-    let action = prompt("enter action: - + / *");
-    let result = 0;
-
-    function calc(){ 
-        if (action === "+") {
-            result = Number(firstValue) + Number(secondValue);
-            return alert(result);
-        } else
-        if (action === '-') {
-            result = Number(firstValue) - Number(secondValue);
-            return alert(result);
-        } else
-        if (action === '*') {
-            result = Number(firstValue) * Number(secondValue);
-            return alert(result);
-        } else
-        if (action === '/') {
-            result = Number(firstValue) / Number(secondValue);
-            return alert(result);
-        } else {
-            return alert("incorrect operator!")
-        }
-    }
-
-    calc();
+    const average = students.reduce((acc, Value) => (acc + Value.age), 0);
+    console.log(average/students.length);
 </script>
 </html>
