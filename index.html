@@ -10,11 +10,53 @@
 </body>
 <script>
     "use strict";
-    let students = [{name: "Arnold",gender: "male",age: 17},{name: "Anita",gender: "female",age: 18},
-    {name: "Olga",gender: "female",age: 25},{name: "Michael",gender: "male",age: 39},
-    {name: "Berta",gender: "female",age: 21}];
+    // let students = [
+    //     {name: "Arnold",gender: "male",age: 17},
+    //     {name: "Anita",gender: "female",age: 18},
+    //     {name: "Olga",gender: "male",age: 40},
+    //     {name: "Michael",gender: "male",age: 39},
+    //     {name: "Berta",gender: "female",age: 21},
+    //     {name: "Greta", gender: "female", age: 21 }
+    // ];
 
-    const average = students.reduce((acc, Value) => (acc + Value.age), 0);
-    console.log(average/students.length);
+    // function getAverageAge (arr) {
+    //     let result = arr.reduce((acc, Value) => (acc + Value.age), 0);
+    //     console.log(result / arr.length);
+    // }
+
+    // function checkMostGender (arr){
+    //     let female = 0;
+    //     let male = 0;
+    //     arr.forEach(el => {
+    //         if(el.gender === "female"){
+    //             female += 1;
+    //         } else {
+    //             male +=1;
+    //         }
+    //     });
+    //     if (female > male) {
+    //         return console.log("female");
+    //     } else if(male === female){
+    //         return console.log("по ровну")
+    //     } else {
+    //         return console.log("male");
+    //     }
+    // };
+    
+    // getAverageAge(students);
+    // checkMostGender(students);
+
+    let arr = [1, 2, 3, 4, 5, 6];
+
+    function clone (arr){
+       return arr.concat([])
+    };
+
+    let brr = clone(arr);
+    
+    brr[0] = 100;
+
+    console.log(arr);
+    console.log(brr);
 </script>
 </html>
